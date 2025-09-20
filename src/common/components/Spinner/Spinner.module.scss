@@ -8,7 +8,6 @@ $scale-ratio: calc(6 / 56);
     align-items: center;
     top: 45px;
     width: 100%;
-    display: none;
 
     &::before {
         content: '';
@@ -28,13 +27,13 @@ $scale-ratio: calc(6 / 56);
             width: calc(100% - 40px);
             margin: 0 auto;
             left: 20px;
-            top: 330px;
+            top: 250px;
         }
     }
 
     @media (width < 500px) {
         &::before {
-            top: 280px;
+            top: 130px;
         }
     }
 }
@@ -49,7 +48,6 @@ $scale-ratio: calc(6 / 56);
     border: 1px solid var(--primary-border-color);
     border-radius: 9999px;
     z-index: 20;
-    display: none;
 
     @media (width < 768px) {
         position: absolute;
@@ -64,6 +62,7 @@ $scale-ratio: calc(6 / 56);
 
     @media (width < 500px) {
         max-width: 86px;
+        bottom: 60px;
     }
 }
 
