@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 120px;
     margin-left: 80px;
+    margin-top: -40px;
 
     @media (width < 768px) {
         position: absolute;
@@ -11,6 +12,7 @@
 
     @media (width < 500px) {
         max-width: 58px;
+        bottom: 85px;
     }
 }
 

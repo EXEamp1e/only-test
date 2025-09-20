@@ -2,18 +2,13 @@
     padding-left: 80px;
     padding-right: 80px;
     align-items: center;
-    justify-content: center;
-    margin-top: 56px;
+    margin-top: 16px;
     margin-bottom: 100px;
     min-height: 156px;
 
     @media (width < 768px) {
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    @media (width < 500px) {
-        margin-top: 80px;
     }
 }
 
