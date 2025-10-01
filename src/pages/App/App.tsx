@@ -6,6 +6,8 @@ import { useFetchTimePeriods } from '@/common/hooks/useFetchTimePeriods';
 import { SpinnerNavigation } from '@/common/components/SpinnerPagination/SpinnerNavigation';
 import styles from './App.module.scss';
 
+declare const ym: (counterId: number, method: string, ...params: any[]) => void;
+
 export const App = () => {
     const { dataTimePeriods, periodNum, dotAngle, animationTime } = useFetchTimePeriods();
     const [period, setPeriod] = useState(0);
@@ -21,6 +23,7 @@ export const App = () => {
 
     const changeEvents = useCallback(
         (index: number) => {
+            ym(104347645, 'reachGoal', 'NavigationButtonClickAB1');
             const newStartDate = dataTimePeriods[index].events[0].date;
             const newEndDate = dataTimePeriods[index].events.at(-1).date;
             const curAnimationTime = rotationTime / 1000;
