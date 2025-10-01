@@ -23,7 +23,7 @@ export const App = () => {
 
     const changeEvents = useCallback(
         (index: number) => {
-            ym(104347645, 'reachGoal', 'NavigationButtonClickAB1');
+            ym(104347645, 'reachGoal', 'NavigationButtonClickAB2');
             const newStartDate = dataTimePeriods[index].events[0].date;
             const newEndDate = dataTimePeriods[index].events.at(-1).date;
             const curAnimationTime = rotationTime / 1000;
